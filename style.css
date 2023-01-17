@@ -1,0 +1,506 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "icon";
+    src: url("fonts/Byom-Icons-Trial.ttf");
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("fonts/Gotham/Gotham-Book.otf");
+}
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("fonts/Gotham/Gotham-Bold.otf");
+}
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url("fonts/Gotham/Gotham-Medium.otf");
+}
+
+:root {
+    --design-color: #d9991a;
+    --book: "Gotham";
+    --medium: "Gotham-Medium";
+    --bold: "Gotham-Bold";
+    --icon-font: "icon";
+    --card-shadow: 3px 7px 0px 3px rgba(0, 0, 0, 0.132);
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+       margin: 0px;
+    }
+    
+    /*---------------HEADER---------------*/
+    #logo-nafita {
+        margin-left: 2em;
+        width: 40%;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+        
+        padding: 2em 1.3em;
+        background-color: var(--design-color);
+        box-shadow: 0px 3px 50px 1px rgba(0, 0, 0, 0.23);
+        
+    }
+    .menu-header-btn {
+        font-family: "icon";
+        font-weight: 700;
+        font-size: 2.2em;
+        
+        color: white;
+    }
+    
+    .nav {
+        margin-right: 0.7em;
+    }
+    
+    .nav-container {
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    
+    .nav-container > a {
+        text-decoration: none;
+        color: black;
+    
+        font-family: var(--book);
+        font-size: 1.1em;
+        font-weight: 900;
+        
+          
+        transition:  0.2s ease-in-out;
+    }
+    .previous-nav-a {
+        margin-right: 3.5em;
+    }
+    
+    .nav-container > a:hover {
+        border-bottom: 3px solid orange;
+    }
+    
+    /* -------------- FIM HEADER ----------------- */
+    
+    
+    /*----------BANNER---------------*/
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-banner{
+        width: 100%;
+        height: 25em;
+        
+        background-color: grey;
+        
+    }
+    
+    .div-banner > picture > img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .div-banner-btns {
+        margin-top: 2em;
+        
+        display: flex;
+        justify-content: space-around;
+        
+        width: 45%;
+    
+        
+    }
+    .div-banner-btns span{
+        
+        font-family: var(--icon-font);
+        font-size: 0.8em;
+        font-weight: 800;
+        color: var(--design-color);
+        
+    
+    }
+    
+    /*----------FIM BANNER---------------*/
+    
+    /*-----------CATALOG----------*/
+    
+    .catalog-section {
+        padding: 2em 4em 4em 4em;
+        
+        margin-top: 3em;
+    }
+    .tittle-section-catalog {
+        font-family: var(--book);
+        font-weight: 700;
+        font-size: 3em; 
+        
+        margin-left: 20px;
+    }
+    .tittle-section-catalog::before {
+        content: "";
+        
+        display: block;
+        
+        position: relative;
+        top: 70px;
+        left: 10px;
+        
+        width: 110px;
+        height: 4px;
+        
+        border-radius: 2em;
+        
+        background-color: var(--design-color);
+    }
+    
+    .div-catalog-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        margin-top: 5em;
+        
+    }
+        
+    
+    .div-catalog-img {
+        display: block;
+        
+        position: relative;
+        top: 0;
+        margin-bottom: 2em;
+        
+        background-color: grey;
+        
+        width: 90%;
+        height: 90%;
+        
+        border-radius: 2em;
+        border: 2px solid orange;
+        
+        overflow: hidden;
+        
+        box-shadow: var(--card-shadow);
+        
+        transition: all 0.3s ease;
+        
+        
+           
+        
+    }
+    .div-catalog-img:hover {
+        top: -1em;
+        cursor: pointer;
+        
+    }
+    
+    .div-catalog-img img {
+        
+        width: 100%;
+        
+        transition: all 0.7s ease-in-out;
+        
+    }
+    .div-catalog-img img:hover {
+        
+        transform: scale(1.05);
+        
+        
+    }
+    
+    
+    .div-catalog-btn {
+        display:flex;
+        justify-content: center;
+        
+        padding: 1em;
+        margin-top: 1em;
+    
+    }
+    
+    .catalog-btn{
+        font-family: var(--bold);
+        font-size: 1.3em;
+        font-weight: 900;
+        color: black;
+        
+        padding: 0.8em 1em;
+        
+        border: 2px solid orange;
+        border-radius: 5em;
+        
+        text-decoration: none;
+    
+    }
+    
+    /*-----------SECTION COMO PEDIR---------------*/
+    
+    .section-como-pedir {
+        margin-top: 7em;
+        padding: 0em 8em 3em;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        border-top: 1.7px solid orange;
+        border-bottom: 1.7px solid orange;
+        border-radius: 1em;
+    
+    }
+    
+    .section-como-pedir img {
+        width: 60%;
+        margin-top: -6em;
+    }
+    
+    .section-como-pedir h1 {
+        font-size: 3.5em;
+        font-family: var(--book);
+        font-weight: 800;
+        
+        text-align: left;
+        
+        margin-top: 0.6em;
+        
+        position: relative;
+        left: 15px;
+    }
+    .section-como-pedir h1::before {
+        content: "";
+        
+        display: block;
+        
+        position: relative;
+        top: 4em;
+        left: 10px;
+        
+        width: 110px;
+        height: 4px;
+        
+        border-radius: 2em;
+        
+        background-color: var(--design-color);
+    }
+    
+    .list-como-pedir {
+        margin-top: 4em;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .item-como-pedir {
+        font-size: 1.8em;
+        font-family: "Gotham";
+        font-weight: 900;
+        text-align: left;
+        line-height: 45px;
+        
+        width: 264px;
+        
+        margin-bottom: 2em;
+    }
+    .second-li {
+        font-size: 1.8em;
+        font-family: "Gotham";
+        font-weight: 900;
+        text-align: left;
+        line-height: 45px;
+        
+        width: 264px;
+        
+        margin-bottom: 1.3em;
+    }
+    
+    .list-como-pedir li::marker {
+        content: counter(list-item)"°   ";
+        color: var(--design-color);
+    }
+    .lines-section-como-pedir {
+        
+        display: inline-block;
+        position: relative;
+        top: 158px;
+        left: -182px;
+        
+        width: 210px;
+        height: 1px;
+        
+        transform: rotate(90deg);
+        
+        
+        
+        background-color: var(--design-color);
+    }
+    .ball {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        left: -181.2px;
+        
+        width: 13px;
+        height: 13px;
+        
+        border-radius: 100%;
+        
+        background-color: var(--design-color);
+    }
+    .como-pedir-contact-btn {
+        font-size: 1.2em;
+        font-weight: 900;
+        font-family: var(--bold);
+        color: black;
+        
+        padding: 0.8em 1em;
+        margin-left: -1em;
+        
+        border: 2px solid var(--design-color);
+        border-radius: 5em;
+        
+        text-decoration: none;
+        
+        position: relative;
+        top: -49px;
+    }
+}
+
+/*-----------SECTION PQ PERSONALIZAR----------*/
+.section-pq-personalizar {
+    margin-top: 2em;
+}
+.div-h1-pq-personalizar {
+    display: flex;
+    justify-content: center;
+    
+    padding: 3em;
+}
+
+.section-pq-personalizar h1{
+    font-size: 2.2em;
+    font-family: var(--book);
+    
+    text-align: center;
+
+} 
+.section-pq-personalizar h1::before {
+    content: "";
+    
+    display: block;
+    
+    position: relative;
+    top: 3em;
+    left: 126px;
+    
+    width: 110px;
+    height: 4px;
+    
+    border-radius: 2em;
+    
+    background-color: var(--design-color);
+}
+.list-pq-personalizar {
+    padding: 2em;
+    
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    padding: 2em;
+    padding-bottom: 6em;
+    border: 1px solid var(--design-color);
+    border-radius: 1em;
+    
+    width: 70%;
+    margin-bottom: 2em;
+    
+    box-shadow: var(--card-shadow);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    font-family: var(--book);
+}
+.card h2::before {
+    content: "";
+    
+    display: block;
+    
+    position: relative;
+    top: 3em;
+    left: 0px;
+    
+    width: 55px;
+    height: 4px;
+    
+    border-radius: 2em;
+    
+    background-color: var(--design-color);
+}
+.card p {
+    font-size: 1.2em;
+    font-family: var(--book);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.667);
+    
+    margin-top: 2.2em;
+    
+    line-height: 1.8em;
+}
+.strong {
+    color: rgba(0, 0, 0, 0.96);
+}
+.pq-personalizar-btn {
+    display: flex;
+    justify-content: center;
+}
+.section-pq-personalizar a {
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: var(--bold);
+    color: black;
+    
+    padding: 0.8em 1em;
+    
+    border: 2px solid var(--design-color);
+    border-radius: 5em;
+    
+    text-decoration: none;
+}
+
+
+
+
+
