@@ -22,401 +22,148 @@
     --medium: "Gotham-Medium";
     --bold: "Gotham-Bold";
     --icon-font: "icon";
-    --card-shadow: 3px 7px 0px 3px rgba(0, 0, 0, 0.132);
+    --card-shadow: 7px 8px 0px 1px rgba(0, 0, 0, 0.132);
 }
 
-@media (max-width: 480px) {
-    body {
-        margin: 0px;
-        width: 100vw;
-        height: 100vh;
-    }
-    html {
-        scroll-behavior: smooth;
-    }
-    * {
-       margin: 0px;
-    }
-    
-    /*---------------HEADER---------------*/
-    #logo-nafita {
-        margin-left: 2em;
-        width: 40%;
-    }
-    
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        
-        position: fixed;
-        top: 0px;
-        z-index: 2;
-        
-        padding: 2em 1.3em;
-        background-color: var(--design-color);
-        box-shadow: 0px 3px 50px 1px rgba(0, 0, 0, 0.23);
-        
-    }
-    .menu-header-btn {
-        font-family: "icon";
-        font-weight: 700;
-        font-size: 2.2em;
-        
-        color: white;
-    }
-    
-    .nav {
-        margin-right: 0.7em;
-    }
-    
-    .nav-container {
-        display: none;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    
-    
-    .nav-container > a {
-        text-decoration: none;
-        color: black;
-    
-        font-family: var(--book);
-        font-size: 1.1em;
-        font-weight: 900;
-        
-          
-        transition:  0.2s ease-in-out;
-    }
-    .previous-nav-a {
-        margin-right: 3.5em;
-    }
-    
-    .nav-container > a:hover {
-        border-bottom: 3px solid orange;
-    }
-    
-    /* -------------- FIM HEADER ----------------- */
-    
-    
-    /*----------BANNER---------------*/
-    .first-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .div-banner{
-        width: 100%;
-        height: 25em;
-        
-        background-color: grey;
-        
-    }
-    
-    .div-banner > picture > img {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .div-banner-btns {
-        margin-top: 2em;
-        
-        display: flex;
-        justify-content: space-around;
-        
-        width: 45%;
-    
-        
-    }
-    .div-banner-btns span{
-        
-        font-family: var(--icon-font);
-        font-size: 0.8em;
-        font-weight: 800;
-        color: var(--design-color);
-        
-    
-    }
-    
-    /*----------FIM BANNER---------------*/
-    
-    /*-----------CATALOG----------*/
-    
-    .catalog-section {
-        padding: 2em 4em 4em 4em;
-        
-        margin-top: 3em;
-    }
-    .tittle-section-catalog {
-        font-family: var(--book);
-        font-weight: 700;
-        font-size: 3em; 
-        
-        margin-left: 20px;
-    }
-    .tittle-section-catalog::before {
-        content: "";
-        
-        display: block;
-        
-        position: relative;
-        top: 70px;
-        left: 10px;
-        
-        width: 110px;
-        height: 4px;
-        
-        border-radius: 2em;
-        
-        background-color: var(--design-color);
-    }
-    
-    .div-catalog-images {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        
-        margin-top: 5em;
-        
-    }
-        
-    
-    .div-catalog-img {
-        display: block;
-        
-        position: relative;
-        top: 0;
-        margin-bottom: 2em;
-        
-        background-color: grey;
-        
-        width: 90%;
-        height: 90%;
-        
-        border-radius: 2em;
-        border: 2px solid orange;
-        
-        overflow: hidden;
-        
-        box-shadow: var(--card-shadow);
-        
-        transition: all 0.3s ease;
-        
-        
-           
-        
-    }
-    .div-catalog-img:hover {
-        top: -1em;
-        cursor: pointer;
-        
-    }
-    
-    .div-catalog-img img {
-        
-        width: 100%;
-        
-        transition: all 0.7s ease-in-out;
-        
-    }
-    .div-catalog-img img:hover {
-        
-        transform: scale(1.05);
-        
-        
-    }
-    
-    
-    .div-catalog-btn {
-        display:flex;
-        justify-content: center;
-        
-        padding: 1em;
-        margin-top: 1em;
-    
-    }
-    
-    .catalog-btn{
-        font-family: var(--bold);
-        font-size: 1.3em;
-        font-weight: 900;
-        color: black;
-        
-        padding: 0.8em 1em;
-        
-        border: 2px solid orange;
-        border-radius: 5em;
-        
-        text-decoration: none;
-    
-    }
-    
-    /*-----------SECTION COMO PEDIR---------------*/
-    
-    .section-como-pedir {
-        margin-top: 7em;
-        padding: 0em 8em 3em;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        border-top: 1.7px solid orange;
-        border-bottom: 1.7px solid orange;
-        border-radius: 1em;
-    
-    }
-    
-    .section-como-pedir img {
-        width: 60%;
-        margin-top: -6em;
-    }
-    
-    .section-como-pedir h1 {
-        font-size: 3.5em;
-        font-family: var(--book);
-        font-weight: 800;
-        
-        text-align: left;
-        
-        margin-top: 0.6em;
-        
-        position: relative;
-        left: 15px;
-    }
-    .section-como-pedir h1::before {
-        content: "";
-        
-        display: block;
-        
-        position: relative;
-        top: 4em;
-        left: 10px;
-        
-        width: 110px;
-        height: 4px;
-        
-        border-radius: 2em;
-        
-        background-color: var(--design-color);
-    }
-    
-    .list-como-pedir {
-        margin-top: 4em;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-    .item-como-pedir {
-        font-size: 1.8em;
-        font-family: "Gotham";
-        font-weight: 900;
-        text-align: left;
-        line-height: 45px;
-        
-        width: 264px;
-        
-        margin-bottom: 2em;
-    }
-    .second-li {
-        font-size: 1.8em;
-        font-family: "Gotham";
-        font-weight: 900;
-        text-align: left;
-        line-height: 45px;
-        
-        width: 264px;
-        
-        margin-bottom: 1.3em;
-    }
-    
-    .list-como-pedir li::marker {
-        content: counter(list-item)"°   ";
-        color: var(--design-color);
-    }
-    .lines-section-como-pedir {
-        
-        display: inline-block;
-        position: relative;
-        top: 158px;
-        left: -182px;
-        
-        width: 210px;
-        height: 1px;
-        
-        transform: rotate(90deg);
-        
-        
-        
-        background-color: var(--design-color);
-    }
-    .ball {
-        display: inline-block;
-        position: relative;
-        top: 2px;
-        left: -181.2px;
-        
-        width: 13px;
-        height: 13px;
-        
-        border-radius: 100%;
-        
-        background-color: var(--design-color);
-    }
-    .como-pedir-contact-btn {
-        font-size: 1.2em;
-        font-weight: 900;
-        font-family: var(--bold);
-        color: black;
-        
-        padding: 0.8em 1em;
-        margin-left: -1em;
-        
-        border: 2px solid var(--design-color);
-        border-radius: 5em;
-        
-        text-decoration: none;
-        
-        position: relative;
-        top: -49px;
-    }
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+   margin: 0px;
 }
 
-/*-----------SECTION PQ PERSONALIZAR----------*/
-.section-pq-personalizar {
-    margin-top: 2em;
+/*---------------HEADER---------------*/
+#logo-nafita {
+    margin-left: 2em;
+    width: 40%;
 }
-.div-h1-pq-personalizar {
+
+.header-container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     
-    padding: 3em;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    
+    padding: 2em 1.3em;
+    background-color: var(--design-color);
+    box-shadow: 0px 3px 50px 1px rgba(0, 0, 0, 0.23);
+    
+}
+.menu-header-btn {
+    font-family: "icon";
+    font-weight: 700;
+    font-size: 2.2em;
+    
+    color: white;
 }
 
-.section-pq-personalizar h1{
-    font-size: 2.2em;
-    font-family: var(--book);
-    
-    text-align: center;
+.nav {
+    margin-right: 0.7em;
+}
 
-} 
-.section-pq-personalizar h1::before {
+.nav-container {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.nav-container > a {
+    text-decoration: none;
+    color: black;
+
+    font-family: var(--book);
+    font-size: 1.1em;
+    font-weight: 900;
+    
+      
+    transition:  0.2s ease-in-out;
+}
+.previous-nav-a {
+    margin-right: 3.5em;
+}
+
+.nav-container > a:hover {
+    border-bottom: 3px solid orange;
+}
+
+/* -------------- FIM HEADER ----------------- */
+
+
+/*----------BANNER---------------*/
+.first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-banner{
+    width: 100%;
+    height: 25em;
+    
+    background-color: grey;
+    
+}
+
+.div-banner > picture > img {
+    width: 100%;
+    height: 100%;
+}
+
+.div-banner-btns {
+    margin-top: 2em;
+    
+    display: flex;
+    justify-content: space-around;
+    
+    width: 45%;
+
+    
+}
+.div-banner-btns span{
+    
+    font-family: var(--icon-font);
+    font-size: 0.8em;
+    font-weight: 800;
+    color: var(--design-color);
+    
+
+}
+
+/*----------FIM BANNER---------------*/
+
+/*-----------CATALOG----------*/
+
+.catalog-section {
+    padding: 2em 4em 4em 4em;
+    
+    margin-top: 3em;
+}
+.tittle-section-catalog {
+    font-family: var(--book);
+    font-weight: 700;
+    font-size: 3em; 
+    
+    margin-left: 20px;
+}
+.tittle-section-catalog::before {
     content: "";
     
     display: block;
     
     position: relative;
-    top: 3em;
-    left: 126px;
+    top: 70px;
+    left: 10px;
     
     width: 110px;
     height: 4px;
@@ -425,11 +172,274 @@
     
     background-color: var(--design-color);
 }
+
+.div-catalog-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 5em;
+}
+
+.div-catalog-images a {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    
+    margin-bottom: 2em;
+    width: 100%;
+    height: 340px;
+    
+    border-radius: 2em;
+    border: 2px solid orange;
+    
+    overflow: hidden;
+  
+    transition: all 0.3s ease;
+}
+.a-catalog-img-fitas {
+    background-image: url("images/Screenshot_6.png");
+    background-size: cover;
+}
+.a-catalog-img-adesivos {
+    background-image: url("images/Screenshot_7.png");
+    background-size: cover;
+}
+.a-catalog-img-adesivos h3, .a-catalog-img-fitas h3 {
+    font-size: 2em;
+    font-family: var(--book);
+    color: white;
+}
+.div-content-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding: 2em;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.111), rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.626),rgba(0, 0, 0, 0.758), rgba(0, 0, 0, 0.862));
+}
+
+.a-catalog-img img {
+    display: block;
+    width: 105%;
+    height: 105%;
+    transition: all 0.7s ease-in-out;
+    
+    background-color: black;
+}
+.a-catalog-img img:hover {
+    
+    transform: scale(1.05);
+    
+    
+}
+
+
+.div-catalog-btn {
+    display:flex;
+    justify-content: center;
+    
+    padding: 1em;
+    margin-top: 1em;
+
+}
+
+.catalog-btn{
+    font-family: var(--bold);
+    font-size: 1.3em;
+    font-weight: 900;
+    color: black;
+    
+    padding: 0.8em 1em;
+    
+    border: 2px solid orange;
+    border-radius: 5em;
+    
+    text-decoration: none;
+
+}
+
+/*-----------SECTION COMO PEDIR---------------*/
+
+.section-como-pedir {
+    margin-top: 7em;
+    padding: 0em 8em 3em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-top: 1.7px solid orange;
+    border-bottom: 1.7px solid orange;
+    border-radius: 1em;
+
+}
+
+.section-como-pedir img {
+    width: 49%;
+    margin-top: -5em;
+}
+
+.section-como-pedir h1 {
+    font-size: 3.5em;
+    font-family: var(--book);
+    font-weight: 800;
+    
+    text-align: left;
+    
+    margin-top: 0.6em;
+    
+    position: relative;
+    left: 15px;
+}
+.section-como-pedir h1::before {
+    content: "";
+    
+    display: block;
+    
+    position: relative;
+    top: 4em;
+    left: 10px;
+    
+    width: 110px;
+    height: 4px;
+    
+    border-radius: 2em;
+    
+    background-color: var(--design-color);
+}
+
+.list-como-pedir {
+    margin-top: 4em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-como-pedir {
+    font-size: 1.8em;
+    font-family: "Gotham";
+    font-weight: 900;
+    text-align: left;
+    line-height: 45px;
+    
+    width: 264px;
+    
+    margin-bottom: 2em;
+}
+.second-li {
+    font-size: 1.8em;
+    font-family: "Gotham";
+    font-weight: 900;
+    text-align: left;
+    line-height: 45px;
+    
+    width: 264px;
+    
+    margin-bottom: 1.3em;
+}
+
+.list-como-pedir li::marker {
+    content: counter(list-item)"°   ";
+    color: var(--design-color);
+}
+.lines-section-como-pedir {
+    
+    display: inline-block;
+    position: relative;
+    top: 158px;
+    left: -182px;
+    
+    width: 210px;
+    height: 1px;
+    
+    transform: rotate(90deg);
+    
+    
+    
+    background-color: var(--design-color);
+}
+.ball {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: -181.2px;
+    
+    width: 13px;
+    height: 13px;
+    
+    border-radius: 100%;
+    
+    background-color: var(--design-color);
+}
+.como-pedir-contact-btn {
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: var(--bold);
+    color: black;
+    
+    padding: 0.8em 1em;
+    margin-left: -1em;
+    
+    border: 2px solid var(--design-color);
+    border-radius: 5em;
+    
+    text-decoration: none;
+    
+    position: relative;
+    top: -49px;
+}
+
+/*-----------SECTION PQ PERSONALIZAR----------*/
+.section-pq-personalizar {
+    margin-top: 2em;
+    
+}
+.div-h1-pq-personalizar {
+    display: flex;
+    justify-content: center;
+
+    padding: 3em;
+}
+
+.section-pq-personalizar h1{
+    font-size: 2.2em;
+    font-family: var(--book);
+
+    text-align: center;
+
+} 
+.section-pq-personalizar h1::before {
+    content: "";
+
+    display: block;
+
+    position: relative;
+    top: 3em;
+    left: 126px;
+
+    width: 110px;
+    height: 4px;
+
+    border-radius: 2em;
+
+    background-color: var(--design-color);
+}
 .list-pq-personalizar {
     padding: 2em;
-    
+
     list-style-type: none;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -442,10 +452,10 @@
     padding-bottom: 6em;
     border: 1px solid var(--design-color);
     border-radius: 1em;
-    
+
     width: 70%;
     margin-bottom: 2em;
-    
+
     box-shadow: var(--card-shadow);
 }
 
@@ -455,18 +465,18 @@
 }
 .card h2::before {
     content: "";
-    
+
     display: block;
-    
+
     position: relative;
     top: 3em;
     left: 0px;
-    
+
     width: 55px;
     height: 4px;
-    
+
     border-radius: 2em;
-    
+
     background-color: var(--design-color);
 }
 .card p {
@@ -474,9 +484,9 @@
     font-family: var(--book);
     font-weight: 700;
     color: rgba(0, 0, 0, 0.667);
-    
+
     margin-top: 2.2em;
-    
+
     line-height: 1.8em;
 }
 .strong {
@@ -491,15 +501,458 @@
     font-weight: 900;
     font-family: var(--bold);
     color: black;
-    
+
     padding: 0.8em 1em;
-    
+
     border: 2px solid var(--design-color);
+    border-radius: 5em;
+
+    text-decoration: none;
+}
+/*-------COMO SAO FEITOS--------*/
+
+.section-como-sao-feitos {
+    
+    margin-top: 13em;
+}
+.div-bg {
+    width: 100vw;
+    height: 80vh;
+    display: block;
+
+    background-image: url(images/4931029.jpg);
+    background-size: contain;
+
+}
+
+.h1-and-content-como-sao-feitos {
+    padding: 2em;
+    margin-top: -853px;
+    
+}
+
+.div-como-sao-feitos {
+    background-color: white;
+    
+    border: 1px solid var(--design-color);
+    border-radius: 1em;
+    
+    padding: 2em;
+    
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.167);
+    
+}
+.div-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: -6.6em;
+   
+}
+.div-como-sao-feitos img {
+    width: 24%;
+}
+.div-como-sao-feitos h1, p {
+    font-family: var(--book);
+}
+
+.div-title-como-sao-feitos {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-como-sao-feitos h1 {
+    text-align: center;
+    font-size: 2em;
+}
+.line {
+    position: relative;
+    top: 1.2em;
+
+    width: 110px;
+    height: 4px;
+
+    border-radius: 2em;
+
+    background-color: var(--design-color);
+}
+.div-content-como-sao-feitos {
+    padding: 2em;
+    padding-top: 1em;
+}
+.div-como-sao-feitos p {
+    font-size: 1.2em;
+    font-family: var(--book);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.667);
+    
+    margin-top: 2em;
+    line-height: 1.8em;
+}
+
+/*---------DEPOIMENTOS---------*/
+
+.section-depoimentos {
+    margin-top: 2em;
+    
+    
+    max-width: 100vw;
+}
+.tittle-and-icon-depoimentos {
+    padding: 2em;
+}
+.div-img-depoimentos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.div-img-depoimentos img {
+    width: 22%;
+}
+.div-title-depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    
+    margin-top: 1.8em;
+}
+.line {
+    position: relative;
+    top: 1em;
+
+    width: 110px;
+    height: 4px;
+
+    border-radius: 2em;
+
+    background-color: var(--design-color);
+}
+
+.div-title-depoimentos h1 {
+    font-family: var(--book);
+    
+    text-align: center;
+    font-size: 2em;
+}
+.list-cards-depoimentos {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    padding: 2em 3em;
+    overflow-x: scroll;
+    
+    
+}
+.div-list-item-depoimentos {
+    
+    margin-right: 2em;
+}
+.card-client-depoimentos {
+    padding: 1.5em 2em;
+    border: 0.5px solid rgba(0, 0, 0, 0.116);
+    border-radius: 0.7em;
+    width: 50vw;
+    
+    background-color: white;
+    box-shadow: 2px 6px 10px 0px rgba(83, 83, 83, 0.125);
+}
+.client-img-depoimentos {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: grey;
+    overflow: hidden;
+}
+.card-client-depoimentos p {
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: var(--book);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.667);
+    
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+/*--------FORMAS DE PAGAMENTO--------*/
+
+.section-formas-de-pagamento {
+    margin-top: 5em;
+}
+.div-icon-and-title-pagamentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2em;
+}
+.div-icon-and-title-pagamentos img {
+    width: 20%;
+}
+.div-icon-and-title-pagamentos h1 {
+    font-family: var(--book);
+    text-align: center;
+    font-size: 2em;
+}
+
+.div-lista-de-pagamentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2em;
+}
+.lista-de-pagamentos {
+    list-style-type: circle;
+}
+.item-lista-de-pagamentos {
+    padding: 1em;
+}
+
+
+.title-lista-de-pagamentos {
+    font-family: var(--book);
+}
+.pix {
+    display: flex;
+}
+.pix img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.div-contact-pagamentos {
+    padding: 4em; 
+    margin-top: 2em; 
+}
+.div-contact-pagamentos p {
+    font-size: 1.8em;
+    font-family: var(--book);
+    font-weight: 900;
+    line-height: 1.2em;
+}
+.contact-btn-pagamentos {
+    display: inline-flex;
+    margin-top: 1em;
+    margin-left: -8px;
+    
+    font-family: var(--bold);
+    font-size: 1.3em;
+    font-weight: 900;
+    color: black;
+    
+    padding: 0.7em 1em;
+    
+    border: 2px solid orange;
     border-radius: 5em;
     
     text-decoration: none;
 }
 
+/*-----------SOBRE-----------*/
+
+.section-sobre {
+    margin-top: 8em;
+    padding: 3em;
+    
+    background-color: white;
+    border: 1px solid var(--design-color);
+    border-radius: 1em;
+    box-shadow: 0px 2px 10px 0px rgba(83, 83, 83, 0.373);
+}
+.div-title-and-img-sobre {
+    display: flex;
+    flex-direction: row;
+}
+.line-sobre {
+    position: relative;
+    top: 0.8em;
+
+    width: 60px;
+    height: 4px;
+
+    border-radius: 2em;
+
+    background-color: var(--design-color);
+}
+.div-title-and-line-sobre h1 {
+    font-family: var(--book);
+    font-size: 2em;
+}
+
+.p-sobre  {
+    display: block;
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-family: var(--book);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.667);
+    padding: 1em;
+    
+    line-height: 2em;
+}
+
+.div-perfil-and-shines {
+    margin-left: 10em;
+    margin-top: -7em;
+}
+.perfil-nafita {
+    width: 100%;
+}
+.shines {
+    width: 10%;
+}
+
+.shine1 {
+    width: 20%;
+    margin-top: -29px;
+    left: -2px;
+}
+.shine4 {
+    width: 20%;
+    margin-top: -29px;
+    left: -2px;
+}
+.div-last-shines {
+    margin-top: -8em;
+    margin-left: -4em;
+}
+
+/*---------CONTATO---------*/
+
+.section-contato {
+    margin-top: 7em;
+    padding: 3em;
+}
+.section-contato h1 {
+    font-family: var(--book);
+    font-size: 2em;
+}
+.line-contato {
+    position: relative;
+    top: 0.8em;
+
+    width: 60px;
+    height: 4px;
+
+    border-radius: 2em;
+
+    background-color: var(--design-color);
+}
+.list-contato {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 4em;
+    margin-left: -1em;
+}
+.list-item-contato {
+    display: flex;
+    flex-direction: row;  
+    padding: 0.8em;
+}
+.list-item-contato img {
+    width: 8%;
+    height: 8%;
+    margin-left: -0.5em;
+}
+.list-item-contato a {
+    font-family: var(--book);
+    font-weight: 900;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: underline;
+    
+    margin-left: 0.5em;
+}
+.atendimento-and-retirada {
+    margin-top: 4em;
+}
+.section-contato h2 {
+    font-family: var(--bold);
+    font-size: 1.5em;
+    font-weight: 700;
+    
+    margin-left: 0.5em;
+}
+
+.title-and-circle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.circle {
+    display: block;
+    border: 2px solid var(--design-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 100%
+}
+.time-and-icon {
+    display: flex;
+    flex-direction: row;
+}
+.time-and-icon p {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-left: 0.5em;
+}
+.list-atendimento-and-retirada {
+    list-style-type: none;
+}
+.list-atendimento-and-retirada li {
+    margin-top: 1.5em;
+}
+.clock {
+    width: 8%;
+    height: 8%;
+}
+.open-now {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: rgb(0, 183, 0);
+    
+    margin-top: 1em;
+}
+.div-retirada {
+    margin-top: 3em;
+}
+.location {
+    width: 8%;
+    height: 8%;
+    margin-left: -1em;
+}
+.location-and-adress {
+    display: flex;
+    flex-direction: row;
+}
+.location-and-adress p {
+    font-family: var(--book);
+    font-size: 1.2em;
+    margin-left: 0.7em;
+}
+.ul-location-and-adress {
+    margin-top: 1.5em;
+}
+.div-maps {
+    margin-top: 2em;
+    max-width: 100vw;
+    height: 300px;
+}
+
+footer {
+    background-color: var(--design-color);
+    padding: 2em;
+}
 
 
 
