@@ -26,17 +26,18 @@
     </header>
     <main>
         <!-- BANNER -->
-        <section class="first-section">
-            <div class="div-banner">
-                <picture>
-                    <source srcset="images/Screenshot_7.png" media="(min-width: 400px)">
-                    <img src="">
-                </picture>
+        <section class="section-banner">
+            <div class="div-banners-wrapper">
+                <div class="div-banner-images">
+                    <img src="images/Screenshot_7.png">
+                    <img src="images/Screenshot_7.png">
+                    <img src="images/Screenshot_6.png">
+                </div>
             </div>
             <div class="div-banner-btns">
-                <span>\</span>
-                <span>\</span>
-                <span>\</span>
+                <input id="radio1" class="banner-btn" name="radio" type="radio" onclick="Carrousel('radio1')">
+                <input id=radio2 class="banner-btn" name="radio" type="radio" onclick="Carrousel('radio2')">
+                <input id="radio3"r class="banner-btn" name="radio" type="radio" onclick="Carrousel('radio3')">
             </div>
         </section>
         <!-- FIM BANNER -->
@@ -287,5 +288,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
