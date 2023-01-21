@@ -35,7 +35,6 @@ function changeWidht() {
 }
 
 function autoBanner(width) {
-    console.log(width)
     switch (width) {
         case 0:
             document.getElementById("radio1").checked = true
