@@ -37,6 +37,10 @@ html {
    margin: 0px;
 }
 
+main {
+    filter: blur(0px);
+    transition: all 0.5s ease;
+}
 
 /*---------------HEADER---------------*/
 #logo-nafita {
@@ -72,15 +76,56 @@ html {
     margin-right: 0.7em;
 }
 
-.nav-container {
+.shadow {
+    position: fixed;
     display: none;
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.659);
+    width: 100vw;
+    height: 100vh;
     
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    
+    position: absolute;
+    top: 107px;
+    right: -387px;
+    width: 250px;
+    height: 100vh;
+    
+    background-color: white;
+    
+    padding: 3em;
+    
+    list-style: none;
+    
+    transition: all 0.5s ease;
 }
 
+.nav-container::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 268px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    background-color: white;
+}
 
-.nav-container > a {
+.nav-container li{
+    padding: 1em;
+    border-bottom: 2px solid black;
+}
+
+.item-nav-container a{
     text-decoration: none;
     color: black;
 
@@ -90,9 +135,6 @@ html {
     
       
     transition:  0.2s ease-in-out;
-}
-.previous-nav-a {
-    margin-right: 3.5em;
 }
 
 .nav-container > a:hover {
@@ -966,11 +1008,74 @@ html {
     height: 300px;
 }
 
+/*---------FOOTER---------*/
 footer {
-    background-color: var(--design-color);
-    padding: 2em;
+    padding: 3em;
+    background-color: #d9991a44;
+    border: 2px solid var(--design-color);
+    margin-top: 2em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer h1 {
+    color: black;
+}
+.sec-footer-nafita {
+    margin-bottom: 2em;
+}
+.sec-footer-nafita p {
+    margin-top: 0.7em;
+    font-size: 1.2em;
+}
+.footer-title {
+    font-size: 1.5em;
+    font-family: var(--book);
+}
+.a-title-footer {
+    text-decoration: none;
+}
+.list-footer {
+    padding: 1.5em;
+
+}
+.list-footer li {
+    margin-bottom: 1em;
+}
+.list-footer a{
+    color: black;
+    font-family: var(--book);
+    font-size: 1.2em;
+}
+.list-item-contato-footer img{
+    width: 8%;
+    height: 8%;
+}
+.div-adress-footer {
+    display: flex;
+    flex-direction: row;
 }
 
-
+.catalogo-footer-btn {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: -1em;
+    font-family: var(--bold);
+    font-size: 1.3em;
+    font-weight: 900;
+    color: black;
+    
+    padding: 0.8em 1em;
+    
+    border: 2px solid rgb(5, 4, 3);
+    border-radius: 5em;
+    
+    text-decoration: none;
+}
+.catalogo-footer-btn:active {
+    color: white;
+    background-color: black;  
+}
 
 

@@ -1,7 +1,7 @@
 const divBanner = document.querySelector(".div-banner-images")
 let width = 0;
 autoBanner(width)
-setInterval(changeWidht, 5000)
+setInterval(changeWidht, 7000)
 
 
 function Carrousel(radio) {

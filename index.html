@@ -9,22 +9,33 @@
 </head>
 <body>
     <header>
+        <div class="shadow"></div>
         <div class="header-container">
             <div id="logo">
                 <img id="logo-nafita" src="images/NAFITA-LOGO-WHITE.png" alt="logo-nafita">
             </div>
             <div class="nav">
                 <div class="menu-header-btn">H</div>
-                <nav class="nav-container">
-                    <a class="previous-nav-a" href="#">INÍCIO</a>
-                    <a class="previous-nav-a" href="#">CATÁLOGO</a>
-                    <a class="previous-nav-a" href="#">SOBRE A GENTE</a>
-                    <a href="#">CONTATO</a>
+                <nav>
+                    <ul class="nav-container">
+                        <li class="item-nav-container">
+                            <a onclick="ShowMenu()" href="#">INÍCIO</a>
+                        </li>
+                        <li class="item-nav-container">
+                            <a onclick="ShowMenu()" href="#">CATÁLOGO</a>
+                        </li>
+                        <li class="item-nav-container">
+                            <a onclick="ShowMenu()" href="#">SOBRE A GENTE</a>
+                        </li>
+                        <li class="item-nav-container">
+                            <a onclick="ShowMenu()" href="#contato">CONTATO</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
+    <main class="main">
         <!-- BANNER -->
         <section class="section-banner">
             <div class="div-banners-wrapper">
@@ -40,7 +51,6 @@
                 <input id="radio3"r class="banner-btn" name="radio" type="radio" onclick="Carrousel('radio3')">
             </div>
         </section>
-        <!-- FIM BANNER -->
         
         <!-- CATÁLOGO -->
         <section class="catalog-section">
@@ -61,7 +71,6 @@
                 <a class="catalog-btn" href="#">ver catálogo completo</a>
             </div>
         </section>
-        <!-- FIM CATÁLOGO -->
         
         <!-- COMO PEDIR -->
         <section class="section-como-pedir">
@@ -78,8 +87,7 @@
             </ol>
             <a class="como-pedir-contact-btn" href="#">entrar em contato</a>
         </section>
-        <!-- FIM COMO PEDIR -->
-        
+      
         <!-- PORQUE DEVO PERSO. -->
         <section class="section-pq-personalizar">
             <div class="div-h1-pq-personalizar">
@@ -103,7 +111,6 @@
                 <a href="#">quero um orçamento</a>
             </div>
         </section>
-        <!-- FIM PORQUE DEVO PERSO. -->
         
         <!-- COMO SÃO FEITOS -->
         <section class="section-como-sao-feitos">
@@ -126,7 +133,6 @@
                 </div>
             </div>
         </section>
-        <!-- FIM COMO SAO FEITOS -->
         
         <!-- DEPOIMENTOS -->
         <section class="section-depoimentos">
@@ -142,26 +148,25 @@
             <div class="list-cards-depoimentos">
                 <div class="div-list-item-depoimentos">
                     <div class="card-client-depoimentos">
-                        <div class="client-img-depoimentos"><img src="s"></div>
+                        <div class="client-img-depoimentos"><img src="#"></div>
                         <p>“Adorei ter comprado com a nafita, a qualidade é muito boa e o atendimento é excelente! Recomendo!”</p>
                     </div>
                 </div>
                 <div class="div-list-item-depoimentos">
                     <div class="card-client-depoimentos">
-                        <div class="client-img-depoimentos"><img src="s"></div>
+                        <div class="client-img-depoimentos"><img src="#"></div>
                         <p>“Adorei ter comprado com a nafita, a qualidade é muito boa e o atendimento é excelente! Recomendo!”</p>
                     </div>
                 </div>
                 <div class="div-list-item-depoimentos">
                     <div class="card-client-depoimentos">
-                        <div class="client-img-depoimentos"><img src="s"></div>
+                        <div class="client-img-depoimentos"><img src="#"></div>
                         <p>“Adorei ter comprado com a nafita, a qualidade é muito boa e o atendimento é excelente! Recomendo!”</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FIM DEPOIMENTOS -->
-        
+       
         <!-- FORMAS DE PAGAMENTO-->
         <section class="section-formas-de-pagamento">
             <div class="div-icon-and-title-pagamentos">
@@ -194,8 +199,7 @@
                 <a class="contact-btn-pagamentos" href="#">entrar em contato</a>
             </div>
         </section>
-        <!-- FIM FORMAS DE PAGAMENTO -->
-        
+
         <!-- SOBRE-->
         <section class="section-sobre">
             <div class="div-title-and-img-sobre">
@@ -215,10 +219,9 @@
             </div>
             <p class="p-sobre">Somos uma empresa especializada em produzir fitas e adesivos personalizados com a sua marca, em várias opções de estilo, cor e tamanho para atender às suas necessidades e ajudar a promover a sua marca.</p>
         </section>
-        <!-- FIM SOBRE-->
         
         <!-- CONTATO-->
-        <section class="section-contato">
+        <section id="contato" class="section-contato">
             <h1>Contato</h1>
             <div class="line-contato"></div>
             <ul class="list-contato">
@@ -274,20 +277,70 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.869203326396!2d-35.217645699999984!3d-5.874002699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255ffb32a259b%3A0x3dd9c340d95d34d0!2sAv.%20Abel%20Cabral%2C%20250%20-%203012%20-%20Nova%20Parnamirim%2C%20Natal%20-%20RN%2C%2059151-250!5e0!3m2!1spt-BR!2sbr!4v1674139773631!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <!-- FIM CONTATO-->
         
     </main>
     <footer>
-        <div id="footer-container">
-            <div id="contato-footer">
-                <h3>CONTATO</h3>
-                <span>instagram</span>
-                <span>facebook</span>
-                <span>tel: (84) 9999-999</span>
-                <span>Endereço: rua ingazeira, 6</span>
-            </div>
-        </div>
+        <section class="sec-footer-nafita">
+            <a href="#" class="a-title-footer">
+                <h1 class="footer-title">Nafita</h1>
+            </a>
+            <p>Transformamos a Sua Marca</p>
+        </section>
+        <nav>
+            <section class="sec-footer-catálogo">
+                <a href="#" class="a-title-footer">
+                    <h1 class="footer-title">Catálogo</h1>
+                </a>
+                <ul class="list-catalog-footer list-footer">
+                    <li>
+                        <a href="#" class="a-footer">Fitas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="a-footer">Adesivos</a>
+                    </li>
+                    <a href="#" class="a-footer catalogo-footer-btn">ver catálogo completo</a>
+                </ul>
+            </section>
+            <section class="sec-duvidas-footer">
+                <a href="#" class="a-title-footer">
+                    <h1 class="footer-title">Dúvidas frequentes</h1>
+                </a>
+                <ul class="list-duvidas-footer list-footer">
+                    <li><a href="#" class="a-footer">Como pedir?</a></li>
+                    <li><a href="#" class="a-footer">Por que personalizar com a minha marca?</a></li>
+                    <li><a href="#" class="a-footer">Como são feitos os produtos?</a></li>
+                    <li><a href="#" class="a-footer">Depoimentos dos clientes</a></li>
+                    <li><a href="#" class="a-footer">Quais as formas de pagamento?</a></li>
+                </ul>
+            </section>
+            <section class="sec-contato-footer">
+                <a href="#" class="a-title-footer">
+                    <h1 class="footer-title">Contato</h1>
+                </a>
+                <ul class="list-contato-footer list-footer">
+                    <li class="list-item-contato-footer">
+                        <img src="images/whatsapp.png">
+                        <a href="#" class="a-footer">(84) 9212-6446</a>
+                    </li>
+                    <li class="list-item-contato-footer">
+                        <img src="images/instagram.png">
+                        <a href="#" class="a-footer">@na.fita_</a>
+                    </li>
+                    <li class="list-item-contato-footer">
+                        <img src="images/mail.png">
+                        <a href="#" class="a-footer">contatonafita@gmail.com</a>
+                    </li>
+                    <li class="list-item-contato-footer">
+                        <div class="div-adress-footer">
+                            <img src="images/location.png">
+                            <p>3012 250, Av. Abel Cabral - Nova Parnamirim, Parnamirim - RN</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/menuScript.js"></script>
+    <script src="scripts/carrosselScript.js"></script>
 </body>
 </html>
