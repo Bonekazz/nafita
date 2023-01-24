@@ -1,19 +1,19 @@
 @charset "UTF-8";
 @font-face {
     font-family: "icon";
-    src: url("fonts/Byom-Icons-Trial.ttf");
+    src: url("../../fonts/Byom-Icons-Trial.ttf");
 }
 @font-face {
     font-family: "Gotham";
-    src: url("fonts/Gotham/Gotham-Book.otf");
+    src: url("../../fonts/Gotham/Gotham-Book.otf");
 }
 @font-face {
     font-family: "Gotham-Bold";
-    src: url("fonts/Gotham/Gotham-Bold.otf");
+    src: url("../../fonts/Gotham/Gotham-Bold.otf");
 }
 @font-face {
     font-family: "Gotham-Medium";
-    src: url("fonts/Gotham/Gotham-Medium.otf");
+    src: url("../../fonts/Gotham/Gotham-Medium.otf");
 }
 
 :root {
@@ -141,6 +141,7 @@ main {
     border-bottom: 3px solid orange;
 }
 
+
 /*----------BANNER---------------*/
 .section-banner {
     display: flex;
@@ -260,12 +261,13 @@ main {
   
     transition: all 0.3s ease;
 }
+
 .a-catalog-img-fitas {
-    background-image: url("images/Screenshot_6.png");
+    background-image: url("../../images/Screenshot_6.png");
     background-size: cover;
 }
 .a-catalog-img-adesivos {
-    background-image: url("images/Screenshot_7.png");
+    background-image: url("../../images/Screenshot_7.png");
     background-size: cover;
 }
 .a-catalog-img-adesivos h3, .a-catalog-img-fitas h3 {
@@ -579,7 +581,7 @@ main {
     height: 80vh;
     display: block;
 
-    background-image: url(images/4931029.jpg);
+    background-image: url(../../images/4931029.jpg);
     background-size: contain;
 
 }

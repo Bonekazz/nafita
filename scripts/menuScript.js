@@ -16,14 +16,12 @@ function ShowMenu() {
             shadowMenu.style.display = "block"
             divMenu.style.right = "0px"
             isMenuVisible = true
-            console.log(isMenuVisible)
             break
         case true:
             main.style.filter = "blur(0px)"
             shadowMenu.style.display = "none"
             divMenu.style.right = "-387px"
             isMenuVisible = false
-            console.log(isMenuVisible)
             break
     }
     
